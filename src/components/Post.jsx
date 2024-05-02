@@ -1,3 +1,4 @@
+import { Comment } from './Comment'
 import styles from './Post.module.css'
 export function Post(){
 
@@ -6,7 +7,7 @@ export function Post(){
             <header>
                 <div className={styles.author}>
                     <img className={styles.profile_img}  src="https://github.com/marcosviniciusjau.png"/>
-                    <div className={styles.author_info}>
+                    <div className={styles.authorInfo}>
                         <strong>Marcos Vinicius</strong>
                         <span>Web Developer</span>
                     </div>
@@ -36,6 +37,11 @@ export function Post(){
                     </footer>
                 </form>
 
+                <div className={styles.commentList}>
+                    <Comment/>
+                    <Comment/>
+                    <Comment/>
+                </div>
                 </article>
     )
 }
