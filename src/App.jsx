@@ -4,6 +4,19 @@ import './global.css';
 
 import styles from './App.module.css';
 import { Sidebar } from './components/Sidebar';
+
+const posts=[
+  {
+    id: 1,
+    author: "Gabriel",
+    content: "Lorem Ipsum"
+  },
+  {
+    id: 2,
+    author: "Gabriel",
+    content: "Lorem Ipsum"
+  }
+]
 export function App() {
   return (
     <div>
