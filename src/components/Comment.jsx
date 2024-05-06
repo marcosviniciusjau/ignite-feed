@@ -11,9 +11,11 @@ export function Comment({content, onDeleteComment}){
     }
 
     function handleLikeComment(){
-        setLikeCount(likeCount + 1)
+        setLikeCount((state) => {
+            return state + 1
+        })
     }
-    
+
     return(
             <div className={styles.comment}>
                 <ProfileImg hasBorder={false} src="https://github.com/marcosviniciusjau.png"/>
